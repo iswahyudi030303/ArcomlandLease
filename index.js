@@ -96,7 +96,7 @@ const whatsappClient = new Client({
     authStrategy: new LocalAuth(),
     puppeteer: {
         headless: true,
-        executablePath: "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        executablePath: "/usr/bin/google-chrome", // Ini yang diubah
         args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
     },
 });
@@ -2131,3 +2131,4 @@ process.on('SIGINT', async () => {
 
 // Jalankan aplikasi
 startApp();
+
